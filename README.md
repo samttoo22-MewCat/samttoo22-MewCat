@@ -1,4 +1,6 @@
 ### Hi there 👋
+I'm a common student in NKNU that majar in Software Engineering.
+Recently working on some scrawler and LLM projects.
 
 <!--
 **samttoo22-MewCat/samttoo22-MewCat** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
