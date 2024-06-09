@@ -1,5 +1,5 @@
 ### Hi there 👋
-I'm a common student in NKNU that major in Software Engineering.</br>
+I'm a common student in NKNU.</br>
 Recently working on some scrawler, machine learning and LLM projects.
 
 ### 你好 👋
