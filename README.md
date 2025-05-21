@@ -7,3 +7,4 @@ Recently working on some scrawler, machine learning and LLM projects.
 最近在寫一些爬蟲、機器學習或者語言模型的專案。
 
 我的email: v99sam@gmail.com
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=samttoo22-MewCat)](https://github.com/anuraghazra/github-readme-stats)
