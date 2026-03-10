@@ -1,30 +1,26 @@
 name: Metrics
 on:
-  # 每天半夜 12 點自動更新
   schedule: [{cron: "0 0 * * *"}]
-  # 允許你手動點擊執行
   workflow_dispatch:
-  # 當你修改 README 時自動更新
   push: {branches: ["master", "main"]}
+  
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
+    
+    # [新增此區塊] 賦予 GitHub Actions 寫入 Repo 的權限以保存圖片
+    permissions:
+      contents: write
+      
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # 你需要去 GitHub Settings 生成一個 Personal Access Token 並存入 Secrets
           token: ${{ secrets.METRICS_TOKEN }}
-          
-          # 核心設定
           user: samttoo22-MewCat
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: Asia/Taipei
-          
-          # 語言比例插件
           plugin_languages: yes
-          plugin_languages_ignored: html, css, jupyter notebook # 忽略前端標籤語言，專注顯示 Python 等後端語言
+          plugin_languages_ignored: html, css, jupyter notebook
           plugin_languages_details: bytes-size, percentage
-          
-          # 程式碼行數插件
           plugin_lines: yes
